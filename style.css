@@ -1,12 +1,12 @@
-/* Importando uma fonte bem elegante */
+/* Importando as fontes direto aqui pra garantir */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-    --bege: #FDF5E6;
-    --rosa-bebe: #FFD1DC;
-    --dourado: #D4AF37;
-    --marrom-cacau: #4B2C20;
-    --branco: #FFFFFF;
+    --fundo-creme: #FDFBF7;   /* Bege bem clarinho quase branco */
+    --rosa-suave: #FFECF0;    /* Rosa bebê bem leve */
+    --dourado-fosco: #C5A02B; /* Dourado mais chique */
+    --marrom-doce: #5D4037;   /* Marrom suave para o texto */
+    --branco-puro: #FFFFFF;
 }
 
 * {
@@ -16,115 +16,107 @@
 }
 
 body {
-    background-color: var(--bege);
+    background-color: var(--fundo-creme);
     font-family: 'Poppins', sans-serif;
-    color: var(--marrom-cacau);
+    color: var(--marrom-doce);
     line-height: 1.6;
 }
 
-/* Header com cara de marca de luxo */
+/* Header mais delicado */
 header {
-    background-color: var(--rosa-bebe);
-    padding: 60px 20px;
+    background-color: var(--rosa-suave);
+    padding: 50px 20px;
     text-align: center;
-    border-bottom: 5px solid var(--dourado);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-bottom: 3px solid var(--dourado-fosco);
 }
 
 header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
-    color: var(--marrom-cacau);
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    color: var(--marrom-doce);
+    margin-bottom: 5px;
 }
 
 header p {
     font-weight: 300;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .container {
     max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Categorias */
+/* Títulos das categorias */
 .categoria h2 {
     text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: var(--dourado);
-    position: relative;
-    padding-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 40px 0 25px;
+    color: var(--dourado-fosco);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.categoria h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 2px;
-    background-color: var(--marrom-cacau);
-}
-
-/* Cards dos Itens */
+/* Cards dos Doces (O segredo do profissionalismo) */
 .cardapio-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 60px;
+    gap: 15px;
 }
 
 .item {
-    background: var(--branco);
-    padding: 25px;
+    background: var(--branco-puro);
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    box-shadow: 0 10px 20px rgba(75, 44, 32, 0.05);
-    transition: all 0.3s ease;
+    /* Sombra bem levinha pra parecer que flutua */
+    box-shadow: 0 5px 15px rgba(93, 64, 55, 0.05);
+    border: 1px solid rgba(255, 236, 240, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(75, 44, 32, 0.1);
-    border-color: var(--rosa-bebe);
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(93, 64, 55, 0.1);
+    border-color: var(--rosa-suave);
 }
 
 .info h3 {
-    font-size: 1.2rem;
-    color: var(--marrom-cacau);
+    font-size: 1.1rem;
+    color: var(--marrom-doce);
     margin-bottom: 5px;
 }
 
 .info p {
-    font-size: 0.85rem;
-    color: #888;
-    max-width: 250px;
+    font-size: 0.8rem;
+    color: #8E7A74; /* Um marrom mais acinzentado pro detalhe */
 }
 
+/* Preço com cara de boutique */
 .preco {
-    background-color: var(--bege);
-    color: var(--marrom-cacau);
-    padding: 8px 15px;
-    border-radius: 50px;
     font-weight: 600;
-    font-size: 1rem;
-    border: 1px solid var(--dourado);
+    color: var(--dourado-fosco);
+    font-size: 1.1rem;
+    padding-left: 15px;
+    border-left: 2px solid var(--rosa-suave);
 }
 
-/* Rodapé */
+/* Rodapé discreto */
 footer {
     text-align: center;
-    padding: 40px;
-    background-color: var(--marrom-cacau);
-    color: var(--bege);
+    padding: 40px 20px;
     margin-top: 50px;
+    background-color: var(--rosa-suave);
+    font-size: 0.8rem;
+    color: var(--marrom-doce);
+}
+
+footer p {
+    margin-bottom: 5px;
 }
