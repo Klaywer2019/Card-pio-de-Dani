@@ -88,3 +88,108 @@ footer {
     margin-top: 40px;
     font-size: 0.8rem;
 }
+
+/* ESTILO GOURMET LIGHT - BEGE & DOURADO */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Bege Claríssimo (Creme) */
+    background-color: #FFFAEE !important; 
+    font-family: 'Poppins', sans-serif;
+    color: #5D4037; /* Marrom suave pros textos */
+}
+
+header {
+    /* Rosa Bebê bem suave no topo */
+    background-color: #FFF0F3 !important;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 3px solid #E5C366; /* Dourado Claro */
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #5D4037;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #8E7A74;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Títulos das categorias em Dourado */
+.categoria h2 {
+    color: #D4AF37;
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+}
+
+/* Cards Brancos pra destacar no Bege */
+.item {
+    background-color: #FFFFFF !important;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Sombra bem levinha pra parecer profissional */
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.1);
+    border: 1px solid #F3E5AB; /* Bordinha dourada bem sutil */
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}
+
+.info h3 {
+    color: #5D4037;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info p {
+    color: #9E8E88;
+    font-size: 0.85rem;
+    max-width: 200px;
+}
+
+/* Preço em Dourado Destaque */
+.preco {
+    font-weight: 700;
+    color: #D4AF37;
+    font-size: 1.3rem;
+    background: #FFF9E5;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #FFF0F3;
+    color: #5D4037;
+    margin-top: 60px;
+    font-size: 0.8rem;
+    border-top: 2px solid #E5C366;
+}
+
