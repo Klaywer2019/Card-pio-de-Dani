@@ -8,13 +8,13 @@
 }
 
 body {
-    background-color: #FDFBF7 !important; /* Bege clarinho - limpo */
+    background-color:#FFFFFF !important; /* branco */
     font-family: 'Poppins', sans-serif;
-    color: #4B2C20; /* Marrom chocolate pro texto */
+    color:#F8F9FA; /* Marrom chocolate pro texto */
 }
 
 header {
-    background-color: #FFD1DC !important; /* Rosa Bebê */
+    background-color: #FAF9F6 !important; /* branco/dourado*/
     padding: 50px 20px;
     text-align: center;
     border-bottom: 4px solid #D4AF37; /* Linha Dourada */
