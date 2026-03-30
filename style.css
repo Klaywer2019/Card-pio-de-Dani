@@ -1,4 +1,10 @@
-/* cardapio.css */
+/* Cores Selecionadas: 
+   Fundo: Bege Claro (#FFF8E7)
+   Cards: Branco Puro (#FFFFFF)
+   Destaques/Dourado: (#D4AF37)
+   Texto: Marrom Suave (#5D4037)
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -8,188 +14,74 @@
 }
 
 body {
-    background-color:#FFFFFF !important; /* branco */
+    /* MUDANÇA REAL: Fundo Bege Bem Clarinho */
+    background-color: #FFF8E7 !important; 
     font-family: 'Poppins', sans-serif;
-    color:#F8F9FA; /* Marrom chocolate pro texto */
+    color: #5D4037;
 }
 
 header {
-    background-color: #FAF9F6 !important; /* branco/dourado*/
-    padding: 50px 20px;
+    background-color: #FFFFFF; /* Topo Branco */
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 4px solid #D4AF37; /* Linha Dourada */
+    border-bottom: 3px solid #D4AF37; /* Linha Dourada */
 }
 
 header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-    color: #4B2C20;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #5D4037;
+    font-size: 3rem;
+    color: #D4AF37; /* Nome em Dourado */
 }
 
 .container {
     max-width: 500px;
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 20px;
 }
 
 .categoria h2 {
     color: #D4AF37;
     text-align: center;
-    font-size: 1.6rem;
     margin-bottom: 25px;
-    border-bottom: 1px solid #FFD1DC;
-    padding-bottom: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
+/* CARDS BRANCOS (Estilo Profissional) */
 .item {
-    background-color: #FFFFFF !important; /* Cards Brancos */
+    background-color: #FFFFFF !important;
+    margin-bottom: 15px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-    /* Sombra bem leve pra dar profundidade */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border: 1px solid #FFECF0;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.1); /* Sombra dourada bem leve */
+    border: 1px solid #F3E5AB;
 }
 
 .info h3 {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+    color: #5D4037;
 }
 
 .info p {
-    font-size: 0.85rem;
-    color: #777;
-    line-height: 1.3;
+    color: #8E7A74;
+    font-size: 0.8rem;
 }
 
 .preco {
     font-weight: bold;
     color: #D4AF37;
     font-size: 1.1rem;
-    min-width: 80px;
-    text-align: right;
+    background: #FFF9E5;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #FFECF0;
-    margin-top: 40px;
-    font-size: 0.8rem;
-}
-
-/* ESTILO GOURMET LIGHT - BEGE & DOURADO */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* Bege Claríssimo (Creme) */
-    background-color: #FFFAEE !important; 
-    font-family: 'Poppins', sans-serif;
-    color: #5D4037; /* Marrom suave pros textos */
-}
-
-header {
-    /* Rosa Bebê bem suave no topo */
-    background-color: #FFF0F3 !important;
-    padding: 50px 20px;
-    text-align: center;
-    border-bottom: 3px solid #E5C366; /* Dourado Claro */
-}
-
-header h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
-    color: #5D4037;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 0.9rem;
     color: #8E7A74;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.container {
-    max-width: 550px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-/* Títulos das categorias em Dourado */
-.categoria h2 {
-    color: #D4AF37;
-    text-align: center;
-    margin: 30px 0 20px;
-    font-size: 1.8rem;
-    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
-}
-
-/* Cards Brancos pra destacar no Bege */
-.item {
-    background-color: #FFFFFF !important;
-    padding: 25px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    /* Sombra bem levinha pra parecer profissional */
-    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.1);
-    border: 1px solid #F3E5AB; /* Bordinha dourada bem sutil */
-    transition: transform 0.3s ease;
-}
-
-.item:hover {
-    transform: scale(1.03);
-}
-
-.info h3 {
-    color: #5D4037;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.info p {
-    color: #9E8E88;
-    font-size: 0.85rem;
-    max-width: 200px;
-}
-
-/* Preço em Dourado Destaque */
-.preco {
-    font-weight: 700;
-    color: #D4AF37;
-    font-size: 1.3rem;
-    background: #FFF9E5;
-    padding: 10px 15px;
-    border-radius: 12px;
-}
-
-footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #FFF0F3;
-    color: #5D4037;
-    margin-top: 60px;
     font-size: 0.8rem;
-    border-top: 2px solid #E5C366;
 }
-
